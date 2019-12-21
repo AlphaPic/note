@@ -1,14 +1,16 @@
 #!/usr/bin/env bash
 #!/bin/bash
 # 0.配置
+#根目录
+ROOT_DIR=/Users/alpha/work/soft
 # zk目录
-ZK_DIR=/Users/alan/work/soft/zookeeper/zookeeper-3.4.13
+ZK_DIR=${ROOT_DIR}/zookeeper/zookeeper-3.4.13
 # kafka启动的目录
-KAFKA_DIR=/Users/alan/work/soft/kafka/kafka_2.12-2.3.0
+KAFKA_DIR=${ROOT_DIR}/kafka/kafka_2.12-2.3.0
 # broker数量
 KAFKA_BROKER_NUM=$2
 # kafka的日志路径
-KAFKA_LOG_DIR=/Users/alan/data/kafka/log
+KAFKA_LOG_DIR=${KAFKA_DIR}/logs
 #1.启动zookeeper
 case $1 in
 	start)
